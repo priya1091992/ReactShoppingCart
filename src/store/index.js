@@ -1,7 +1,3 @@
-/**
- * Created by ttn on 18/11/16.
- */
-
 import { createStore, applyMiddleware } from 'redux';
 import reducers from '../reducers';
 import thunk from 'redux-thunk';
@@ -19,4 +15,3 @@ function configureStore() {
 const store = configureStore();
 
 export default store;
-

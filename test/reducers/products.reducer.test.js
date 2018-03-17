@@ -6,7 +6,8 @@ describe('Product reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual(
       {
-        products: []
+        products: [],
+        AllProducts: []
       }
     )
   })
@@ -15,11 +16,13 @@ describe('Product reducer', () => {
     expect(
       reducer([], {
         type: types.SET_PRODUCT,
-        products: data
+        products: data,
+        AllProducts: data
       })
     ).toEqual(
       {
-        products: data.products
+        products: data.products,
+        AllProducts: data.products
       }
     )
   })

@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import StarRatingComponent from 'react-star-rating-component';
+import PropTypes from 'prop-types';
 import './style.scss';
 
 class Card extends Component {
+
+  /**
+  * Initialize a productFeatures function
+  * to render all the features of an individual product
+  */
   productFeatures (features) {
     const featureList = features ? features.map((feature, i) => {
       return (
@@ -12,6 +18,10 @@ class Card extends Component {
     return featureList
   }
 
+  /**
+  * Initialize a displayProducts function
+  * to write JSX for displaying products.
+  */
   displayProducts (data, i) {
     return (
       <div className="card" key={i}>
@@ -44,6 +54,11 @@ class Card extends Component {
   render () {
     let { listData, inputData, searchedData } = this.props
     let productFiletration = [...listData]
+
+    /**
+    * condition to display the product
+    * based on the inout field text data
+    */
     if (inputData && inputData.length >= 3) {
      productFiletration = listData.filter((data) => {
         let title = data.itemTitle.toLowerCase()
@@ -51,6 +66,10 @@ class Card extends Component {
       })
     }
 
+    /**
+    * switch case to filter data
+    * on the basis of the selected option
+    */
    switch (searchedData) {
      case 'popular':
        productFiletration = productFiletration.filter((data) => {
@@ -80,5 +99,15 @@ class Card extends Component {
     )
   }
 }
+
+Card.defaultProps = {
+  listData: [],
+}
+
+Card.propTypes = {
+  listData: PropTypes.array.isRequired,
+  inputData: PropTypes.string,
+  searchedData: PropTypes.string,
+};
 
 export default Card

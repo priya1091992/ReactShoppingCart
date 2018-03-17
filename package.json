@@ -30,7 +30,8 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "webpack": "2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-dev-server": "^2.3.0",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel-jest": "^21.2.0",
