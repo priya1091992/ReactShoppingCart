@@ -1,6 +1,6 @@
 # ReactShoppingCart
 
-Application that display products and has search or filter functionality. 
+Application that display products and has search or filter functionality.
 You can find some screen shots of the application in screenShots folder.
 
 ## Getting Started
@@ -20,6 +20,7 @@ A step by step series to get a development env running
 2. npm install
 3. npm run build
 4. npm run start
+4. run application on url: http://localhost:9000/
 
 ```
 
