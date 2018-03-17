@@ -14,7 +14,7 @@ const productOptions = {
   'high-price': 'High Price',
 }
 
-class ProductDetail extends Component {
+export class ProductDetail extends Component {
   constructor(props){
     super(props);
     this.state = {
