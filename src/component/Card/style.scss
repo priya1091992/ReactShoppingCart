@@ -1,0 +1,52 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-top: 20px;
+  .card {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 12px;
+    margin-top: 12px;
+    width: 28%;
+    margin: 12px;
+    @media (min-width: 731px) and (max-width: 1040px) {
+      width: 42%;
+    }
+    @media (max-width: 730px) {
+      width: 100%;
+    }
+    .logo {
+      max-width: 50%;
+      max-height: 32%;
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 12px;
+    }
+    .rating {
+      border-bottom: 1px solid grey;
+      .rating-number {
+        vertical-align: top;
+        font-weight: bold;
+      }
+    }
+    .basic {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid grey;
+    }
+    .feature {
+      padding-left: 20px;
+    }
+    input[type=checkbox] {
+      color: #ccc;
+      cursor: pointer;
+    }
+    .add-cart {
+      padding-left: 12px;
+    }
+  }
+  .card:hover {
+    background-color: #EAEAEF;
+  }
+}

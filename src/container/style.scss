@@ -1,0 +1,42 @@
+.container {
+  margin: 20px;
+  .radio-options {
+    padding-left: 25px;
+    label {
+      padding-left: 12px;
+      font-size: 15px;
+      vertical-align: middle;
+    }
+    input[type="radio"] {
+      font-size: 25px;
+    }
+  }
+  .option {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+    input[type="text"] {
+      width: 25%;
+      line-height: 35px;
+      font-size: 18px;
+      padding: 4px 12px;
+          @media (max-width: 730px) {
+        width: 50%;
+      }
+    }
+    .logo {
+      width: 42px;
+      height: 32px;
+      position: relative;
+      z-index: 1;
+      left: -44px;
+      top: 8px;
+      color: #7B7B7B;
+      cursor: pointer
+    }
+  }
+  .input-field {
+    border-bottom: 1px solid grey;
+    padding-bottom: 12px;
+  }
+}
