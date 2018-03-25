@@ -17,10 +17,11 @@ A step by step series to get a development env running
 
 ```
 1. git clone https://github.com/priya1091992/ReactShoppingCart.git
-2. npm install
-3. npm run build
-4. npm run start
-4. run application on url: http://localhost:9000/
+2. cd ReactShoppingCart
+3. npm install
+4. npm run build
+5. npm run start
+6. run application on url: http://localhost:9000/
 
 ```
 
